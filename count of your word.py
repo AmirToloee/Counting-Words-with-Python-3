@@ -3,6 +3,7 @@ import pandas as pd
 import csv
 import string
 txt = open('words1.txt').read()
+txt=txt.upper()
 words = txt.split()
 data = {}
 for x in words:
