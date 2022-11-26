@@ -1,16 +1,17 @@
 import numpy as np
 import pandas as pd
+import csv
+import string
+#thats your file
 txt = open('words1.txt').read()
 words = txt.split()
-
+print(words)
+data = {}
 for x in words:
-    count=words.count(x)
-    print(x,count)
+        print(x)
+        data[x]=x        
+        count=words.count(x)
+        data[x]=count  
+print(data)  
         
-      
-s=0
-for i in range(len(txt)):
-    if txt[i] == " ":
-        s=s+1           
-print('the number of space: ',s)
-print('The nunmber of your word: ',len(words))
+
