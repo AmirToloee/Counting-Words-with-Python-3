@@ -6,7 +6,6 @@ txt = open('words1.txt').read()
 words = txt.split()
 data = {}
 for x in words:
-        x=x.upper()
         print(x)
         data[x]=x        
         count=words.count(x)
